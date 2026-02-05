@@ -23,20 +23,24 @@ You can install the agents either per-project or globally.
 
 ### Project (repo-local)
 
-Copy the agent files into your project:
+Fetch the agent files into your project:
 
-```
-.opencode/agent/skipper.md
-.opencode/agent/deckhand.md
+```bash
+OAK_ACW_RAW="https://raw.githubusercontent.com/lucasscarioca/oak-acw/main"
+mkdir -p .opencode/agent
+curl -L "$OAK_ACW_RAW/.opencode/agent/skipper.md" -o .opencode/agent/skipper.md
+curl -L "$OAK_ACW_RAW/.opencode/agent/deckhand.md" -o .opencode/agent/deckhand.md
 ```
 
 ### Global
 
-Copy the agent files into your global config directory:
+Fetch the agent files into your global config directory:
 
-```
-~/.config/opencode/agent/skipper.md
-~/.config/opencode/agent/deckhand.md
+```bash
+OAK_ACW_RAW="https://raw.githubusercontent.com/lucasscarioca/oak-acw/main"
+mkdir -p ~/.config/opencode/agent
+curl -L "$OAK_ACW_RAW/.opencode/agent/skipper.md" -o ~/.config/opencode/agent/skipper.md
+curl -L "$OAK_ACW_RAW/.opencode/agent/deckhand.md" -o ~/.config/opencode/agent/deckhand.md
 ```
 
 Notes:
