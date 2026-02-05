@@ -1,6 +1,6 @@
 ---
 description: Task orchestration planner
-model: openai/gpt-5.2-codex
+model: openai/gpt-5.3-codex
 mode: primary
 ---
 

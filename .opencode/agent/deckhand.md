@@ -6,7 +6,7 @@ description: |-
   Examples:
   - user: "Skipper delegates: find auth files" -> search and report
 mode: subagent
-model: openai/gpt-5.2-codex
+model: openai/gpt-5.3-codex
 variant: medium
 permission:
   bash:
