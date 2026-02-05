@@ -12,8 +12,8 @@ It is not an application codebase, so expect mostly Markdown and config.
 
 ## Available agents
 
-- Skipper: planning-first orchestrator.
-- Deckhand: generalist execution subagent.
+- Core: planning-first orchestrator.
+- Worker: generalist execution subagent.
 
 ## Build, lint, and test commands
 
@@ -31,7 +31,7 @@ Do not invent commands. If you add tooling later, update this section.
 
 - Follow the OpenCode docuemntation.
 - Files are Markdown with YAML frontmatter.
-- Agent filenames are lowercase (for example, `skipper.md`).
+- Agent filenames are lowercase (for example, `core.md`).
 - The H1 should match the agent name (Title Case).
 - Use XML tags for structure inside the prompt body.
 - Keep instructions explicit and action-oriented.
