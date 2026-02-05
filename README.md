@@ -11,9 +11,10 @@ Oak ACW (Oak Agentic Coding Workflow) is a small collection of agentic coding to
 
 Skipper acts as a plan-first orchestrator. For anything beyond trivial tasks, it:
 
-1. Produces a detailed plan.
-2. Delegates atomic tasks to Deckhand.
-3. Reviews results and continues until the plan is complete.
+1. Produces an Overview Plan for user approval.
+2. Derives an Execution Plan per atomic task.
+3. Delegates each task to Deckhand.
+4. Reviews results and continues until the plan is complete.
 
 Deckhand is a generalist worker. It follows Skipper's prompt, uses tools to execute, and reports back with results, file changes, and commands run.
 
@@ -50,7 +51,7 @@ Notes:
 
 ## Usage
 
-Select Skipper as your active agent in OpenCode, then describe the task. Skipper will plan and delegate work to Deckhand automatically. For very simple tasks, it may act directly.
+Select Skipper as your active agent in OpenCode, then describe the task. Skipper will draft an Overview Plan for approval, then delegate Execution Plan tasks to Deckhand. For very simple tasks, it may act directly.
 
 ## Repository layout
 
