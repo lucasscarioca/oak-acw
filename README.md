@@ -5,15 +5,15 @@ Oak ACW (Oak Agentic Coding Workflow) is a small collection of agentic coding to
 ## What is available
 
 - **Core**: primary, planning-first orchestrator agent that designs detailed plans and delegates execution.
-- **Worker**: generic execution subagent used by Core for exploration, implementation, and documentation tasks.
+- **Worker**: generic execution subagent used by Core for exploration, implementation, and documentation work.
 
 ## How it works
 
-Core acts as a plan-first orchestrator. For anything beyond trivial tasks, it:
+Core acts as a plan-first orchestrator. For anything beyond trivial work, it:
 
-1. Produces an Overview Plan for user approval.
-2. Derives an Execution Plan per atomic task.
-3. Delegates each task to Worker.
+1. Produces a Plan for user approval.
+2. Derives a Work Brief per atomic unit of work.
+3. Delegates each work item to Worker.
 4. Reviews results and continues until the plan is complete.
 
 Worker is a generalist worker. It follows Core's prompt, uses tools to execute, and reports back with results, file changes, and commands run.
@@ -51,7 +51,7 @@ Notes:
 
 ## Usage
 
-Select Core as your active agent in OpenCode, then describe the task. Core will draft an Overview Plan for approval, then delegate Execution Plan tasks to Worker. For very simple tasks, it may act directly.
+Select Core as your active agent in OpenCode, then describe the work. Core will draft a Plan for approval, then delegate Work Brief items to Worker. For very simple work, it may act directly.
 
 ## Repository layout
 
